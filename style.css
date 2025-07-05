@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eaf4ff;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  max-width: 500px;
+  width: 90%;
+}
+
+input[type="number"],
+input[type="text"],
+select,
+button {
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+input[type="text"]::placeholder {
+  color: #999;
+}
+
+h1 {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#roleModal h2, #voteModal h2, #resultModal h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#roleModal p, #voteModal p, #resultModal p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#roleModal button,
+#voteModal button,
+#resultModal button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+

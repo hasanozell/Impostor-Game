@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ünlü İmpostor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Impostor Game</h1>
+    <h6>Developed by Hasan Özel</h6>
+
+    <label>Kaç kişi oynayacak? (3-6):</label>
+    <input type="number" id="playerCount" min="3" max="6">
+    <button onclick="createNameInputs()">İsimleri Gir</button>
+
+    <div id="nameInputs"></div>
+
+    <div id="categorySection" style="display:none;">
+      <label>Bir kategori seçin:</label>
+      <select id="categorySelect">
+        <option value="">--Kategori Seç--</option>
+        <option value="karisik">Karışık</option>
+        <option value="futbolcu">Futbolcu</option>
+        <option value="turk">Türk Ünlü</option>
+        <option value="karisikUnlu">Karışık Ünlü</option>
+      </select>
+    </div>
+
+    <button id="startGameBtn" onclick="startGame()" style="display:none;">Oyunu Başlat</button>
+    <button id="newGameBtn" onclick="resetGame()" style="display:none;">Yeni Oyun</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
+
+
